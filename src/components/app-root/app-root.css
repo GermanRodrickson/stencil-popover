@@ -1,15 +1,37 @@
-header {
-  background: #5851ff;
-  color: white;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+.text {
+  background-color: #02bdda;
+  color: #e3fbff;
+  cursor: default;
+  display: inline-block;
+  font-family: "Helvetica", sans-serif;
+  font-weight: bold;
+  position: relative;
 }
-
-h1 {
-  font-size: 1.4rem;
-  font-weight: 500;
+.text .popover {
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 5px;
+  bottom: 100%;
   color: #fff;
-  padding: 0 12px;
+  padding: 10px;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, 0%);
+  opacity: 0;
+  transition: 0.3s;
+}
+.text .popover:before {
+  border-top: 7px solid rgba(0, 0, 0, 0.85);
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  bottom: -7px;
+  content: "";
+  display: block;
+  left: 50%;
+  margin-left: -7px;
+  position: absolute;
+}
+.text:hover .popover {
+  display: block;
+  opacity: 1;
+  transform: translate(50%, -40%);
 }
