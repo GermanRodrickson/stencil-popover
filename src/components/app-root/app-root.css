@@ -1,13 +1,11 @@
 .text {
   background-color: #02bdda;
   color: #e3fbff;
-  cursor: default;
-  display: inline-block;
-  font-family: "Helvetica", sans-serif;
-  font-weight: bold;
+  cursor: pointer;
   position: relative;
 }
 .text .popover {
+  white-space: nowrap;
   background-color: rgba(0, 0, 0, 0.85);
   border-radius: 5px;
   bottom: 100%;
@@ -15,7 +13,7 @@
   padding: 10px;
   position: absolute;
   right: 50%;
-  transform: translate(50%, 0%);
+  transform: translate(50%, -20%);
   opacity: 0;
   transition: 0.3s;
 }
@@ -33,5 +31,4 @@
 .text:hover .popover {
   display: block;
   opacity: 1;
-  transform: translate(50%, -40%);
 }
