@@ -1,4 +1,4 @@
-import { Component } from "@stencil/core";
+import { Component, Prop } from "@stencil/core";
 
 @Component({
   tag: "app-root",
@@ -6,11 +6,15 @@ import { Component } from "@stencil/core";
   shadow: true
 })
 export class AppRoot {
+  @Prop() popon: string;
+  @Prop() text: string;
+
   render() {
     return (
       <div>
         <span class="text">
-          hover me<span class="popover above">Popover on</span>
+          {this.text}
+          <span class="popover above">{this.popon}</span>
         </span>
       </div>
     );

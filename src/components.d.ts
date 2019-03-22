@@ -13,8 +13,14 @@ import '@stencil/state-tunnel';
 
 export namespace Components {
 
-  interface AppRoot {}
-  interface AppRootAttributes extends StencilHTMLAttributes {}
+  interface AppRoot {
+    'popon': string;
+    'text': string;
+  }
+  interface AppRootAttributes extends StencilHTMLAttributes {
+    'popon'?: string;
+    'text'?: string;
+  }
 }
 
 declare global {
