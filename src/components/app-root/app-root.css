@@ -21,6 +21,8 @@
   position: absolute;
 }
 
+/* Classes */
+
 .text .top {
   margin-bottom: -5px;
   right: 50%;
@@ -40,8 +42,8 @@
 .text .bottom {
   margin-top: -5px;
   left: 50%;
-  transform: translate(-50%, 20%);
   top: 100%;
+  transform: translate(-50%, 20%);
 }
 
 .text .bottom:before {
@@ -53,15 +55,33 @@
   margin-left: -7px;
 }
 
+.text .right {
+  top: -50%;
+  margin-left: 0px;
+}
+
+.text .right:before {
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid rgba(0, 0, 0, 0.85);
+  top: 50%;
+  left: 0;
+  margin: -7px 0px 0px -7px;
+}
+
+/* Animation */
+
 .text:hover span {
   display: block;
   opacity: 1;
   margin-bottom: 5px;
 }
-
 .text:hover .top {
   margin-bottom: 5px;
 }
 .text:hover .bottom {
   margin-top: 5px;
+}
+.text:hover .right {
+  margin-left: 10px;
 }
