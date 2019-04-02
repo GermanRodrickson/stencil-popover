@@ -7,18 +7,19 @@
 
 import '@stencil/core';
 
-import '@stencil/router';
-import '@stencil/state-tunnel';
+
 
 
 export namespace Components {
 
   interface AppRoot {
     'popon': string;
+    'popover': string;
     'text': string;
   }
   interface AppRootAttributes extends StencilHTMLAttributes {
     'popon'?: string;
+    'popover'?: string;
     'text'?: string;
   }
 }

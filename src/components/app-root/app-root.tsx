@@ -8,13 +8,14 @@ import { Component, Prop } from "@stencil/core";
 export class AppRoot {
   @Prop() popon: string;
   @Prop() text: string;
+  @Prop() popover: string;
 
   render() {
     return (
       <div>
         <span class="text">
           {this.text}
-          <span class="popover above">{this.popon}</span>
+          <span class={this.popover}>{this.popon}</span>
         </span>
       </div>
     );
