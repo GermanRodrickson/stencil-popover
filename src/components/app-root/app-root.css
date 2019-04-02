@@ -69,6 +69,21 @@
   margin: -7px 0px 0px -7px;
 }
 
+.text .left {
+  top: -50%;
+  right: 100%;
+  margin-right: 0px;
+}
+
+.text .left:before {
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid rgba(0, 0, 0, 0.85);
+  top: 50%;
+  left: 100%;
+  margin: -7px -7px 0px 0px;
+}
+
 /* Animation */
 
 .text:hover span {
@@ -84,4 +99,7 @@
 }
 .text:hover .right {
   margin-left: 10px;
+}
+.text:hover .left {
+  margin-right: 10px;
 }
