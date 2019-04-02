@@ -13,10 +13,10 @@ export class AppRoot {
   render() {
     return (
       <div>
-        <span class="text">
+        <p class="text">
           {this.text}
           <span class={this.popover}>{this.popon}</span>
-        </span>
+        </p>
       </div>
     );
   }
