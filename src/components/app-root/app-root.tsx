@@ -12,11 +12,9 @@ export class AppRoot {
 
   render() {
     return (
-      <div>
-        <p class="text">
-          {this.text}
-          <span class={this.popover}>{this.popon}</span>
-        </p>
+      <div class="wrapper">
+        <p class="text">{this.text}</p>
+        <span class={this.popover}>{this.popon}</span>
       </div>
     );
   }
